@@ -39,8 +39,8 @@ export default function Home() {
                 <feTurbulence type="fractalNoise" baseFrequency="0.008 0.024" numOctaves="1" seed="12" result="breeze">
                   <animate attributeName="baseFrequency" values="0.008 0.024;0.011 0.032;0.008 0.024" dur="6s" repeatCount="indefinite" />
                 </feTurbulence>
-                <feDisplacementMap in="SourceGraphic" in2="breeze" scale="12" xChannelSelector="R" yChannelSelector="G">
-                  <animate attributeName="scale" values="6;12;8;6" dur="7s" repeatCount="indefinite" />
+                <feDisplacementMap in="SourceGraphic" in2="breeze" scale="10.2" xChannelSelector="R" yChannelSelector="G">
+                  <animate attributeName="scale" values="5.1;10.2;6.8;5.1" dur="7s" repeatCount="indefinite" />
                 </feDisplacementMap>
               </filter>
               <filter id="ocean-ripple" x="-5%" y="-5%" width="110%" height="110%" colorInterpolationFilters="sRGB">
