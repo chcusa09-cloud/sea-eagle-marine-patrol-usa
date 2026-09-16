@@ -30,7 +30,24 @@ export default function Home() {
             alt="Water-level view of a dark wooden Viking ship sailing toward the sunset, with the SEMP emblem on its sail and carved into its hull"
             fetchPriority="high"
           />
+          <svg className="ocean-filter-defs" aria-hidden="true" width="0" height="0">
+            <defs>
+              <filter id="ocean-ripple" x="-5%" y="-5%" width="110%" height="110%" colorInterpolationFilters="sRGB">
+                <feTurbulence type="fractalNoise" baseFrequency="0.012 0.065" numOctaves="1" seed="7" result="water-noise">
+                  <animate attributeName="baseFrequency" values="0.012 0.065;0.016 0.085;0.012 0.065" dur="9s" repeatCount="indefinite" />
+                </feTurbulence>
+                <feDisplacementMap in="SourceGraphic" in2="water-noise" scale="12" xChannelSelector="R" yChannelSelector="G" />
+              </filter>
+            </defs>
+          </svg>
+          <div className="ocean-motion" aria-hidden="true">
+            <img src="/viking-hero.webp" alt="" className="ocean-ripple-image" />
+          </div>
           <div className="hero-shade" />
+          <label className="ocean-motion-toggle">
+            <input type="checkbox" />
+            Pause water animation
+          </label>
           <div className="hero-copy">
             <p className="eyebrow">
               <span /> UNITED IN PURPOSE. ANCHORED IN SERVICE.

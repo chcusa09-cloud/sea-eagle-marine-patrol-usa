@@ -1316,6 +1316,54 @@ h2 em {
   object-position: center;
   z-index: -3;
 }
+.ocean-filter-defs {
+  position: absolute;
+  pointer-events: none;
+}
+.ocean-motion {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  pointer-events: none;
+  mask-image: linear-gradient(to bottom, transparent 77%, #000 90%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 77%, #000 90%);
+}
+.ocean-ripple-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: url(#ocean-ripple);
+  animation: ocean-swell 6s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+@keyframes ocean-swell {
+  0%, 100% { transform: translateY(0) scale(1.008); }
+  50% { transform: translateY(-3px) scale(1.014); }
+}
+.ocean-motion-toggle {
+  position: absolute;
+  right: 6%;
+  bottom: 90px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 13px;
+  font-size: 0.875rem;
+  color: #fff;
+  background: #071521d9;
+  border: 1px solid #ffffff40;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ocean-motion-toggle input { width: 17px; height: 17px; accent-color: #ad142a; }
+.cinematic:has(.ocean-motion-toggle input:checked) .ocean-motion { display: none; }
+@media (max-width: 760px) {
+  .ocean-ripple-image { object-position: 60% center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ocean-motion, .ocean-motion-toggle { display: none; }
+}
 .hero-shade {
   position: absolute;
   inset: 0;
