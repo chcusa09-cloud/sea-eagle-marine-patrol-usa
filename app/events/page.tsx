@@ -34,6 +34,28 @@ export default function Page() {
             </div>
           </section>
           <PublicContent type="events" />
+          <section aria-labelledby="past-highlights" style={{ marginTop: 48 }}>
+            <h2 id="past-highlights">Past event highlights</h2>
+            <article className="outreach-story" style={{ marginTop: 28 }}>
+              <figure>
+                <img
+                  src="/atlanta-leadership-summit.webp"
+                  width="1280"
+                  height="960"
+                  alt="Sea Eagle Marine Patrol USA Inc. leadership summit participants gathered for a group photo in Atlanta"
+                  loading="lazy"
+                />
+                <figcaption>Sea Eagle Marine Patrol USA Inc. Leadership Summit, Atlanta, Georgia.</figcaption>
+              </figure>
+              <div className="outreach-story-copy">
+                <p className="eyebrow red-text">LEADERSHIP / ATLANTA, GEORGIA</p>
+                <h2>Leadership Summit in Atlanta</h2>
+                <p>Sea Eagle Marine Patrol USA Inc. held its Leadership Summit in
+                  Atlanta, bringing members together in the spirit of brotherhood,
+                  unity, and service to humanity.</p>
+              </div>
+            </article>
+          </section>
         </div>
       </main>
       <Footer />

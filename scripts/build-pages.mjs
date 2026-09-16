@@ -42,7 +42,7 @@ const css = await postcss([tailwind()]).process(await readFile('app/globals.css'
 await writeFile('pages-dist/style.css', css.css.replace(/url\((["']?)\/(maritime-hero\.webp|sea-eagle-logo\.jpeg)\1\)/g, (_, quote, asset) => `url("${base}/${asset}")`));
 const stylesheet = `style-${createHash('sha256').update(await readFile('pages-dist/style.css')).digest('hex').slice(0, 12)}.css`;
 await copyFile('pages-dist/style.css', `pages-dist/${stylesheet}`);
-for (const name of ['sea-eagle-logo.jpeg', 'maritime-hero.webp', 'viking-hero.webp', 'gulf-houston-food-bank.webp', 'atlanta-charity-outreach.webp', 'social-facebook.svg', 'social-tiktok.svg', 'social-instagram.svg']) await copyFile(`public/${name}`, `pages-dist/${name}`);
+for (const name of ['sea-eagle-logo.jpeg', 'maritime-hero.webp', 'viking-hero.webp', 'gulf-houston-food-bank.webp', 'atlanta-charity-outreach.webp', 'atlanta-leadership-summit.webp', 'social-facebook.svg', 'social-tiktok.svg', 'social-instagram.svg']) await copyFile(`public/${name}`, `pages-dist/${name}`);
 function url(path) {
   if (/^\/(portal|admin|setup)(\/|$|[?#])/.test(path)) return backend + path;
   const [pathname, hash] = path.split('#');
