@@ -3,7 +3,7 @@ import { ArrowUpRight, Anchor } from "lucide-react";
 const socialProfiles = [
   { name: "Facebook", icon: "facebook", url: "" },
   { name: "TikTok", icon: "tiktok", url: "" },
-  { name: "Instagram", icon: "instagram", url: "" },
+  { name: "Instagram", icon: "instagram", url: "https://www.instagram.com/sempusainc/" },
 ];
 export function Header() {
   return (
