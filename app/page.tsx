@@ -24,6 +24,8 @@ export default function Home() {
       <Header />
       <main id="main">
         <section className="hero cinematic">
+          <figure className="hero-art">
+          <div className="hero-art-frame">
           <img
             className="hero-ocean"
             src="/viking-hero.webp"
@@ -43,11 +45,12 @@ export default function Home() {
           <div className="ocean-motion" aria-hidden="true">
             <img src="/viking-hero.webp" alt="" className="ocean-ripple-image" />
           </div>
-          <div className="hero-shade" />
+          </div>
           <label className="ocean-motion-toggle">
             <input type="checkbox" />
             Pause water animation
           </label>
+          </figure>
           <div className="hero-copy">
             <p className="eyebrow">
               <span /> UNITED IN PURPOSE. ANCHORED IN SERVICE.

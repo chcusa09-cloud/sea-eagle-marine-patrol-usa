@@ -1981,3 +1981,32 @@ h2 em {
   }
 }
 
+
+/* Keep the complete ship artwork separate from the headline at every size. */
+.hero.cinematic {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.6fr);
+  align-items: center;
+  gap: 32px;
+  padding: 60px 4% 0;
+  min-height: 0;
+  overflow: hidden;
+}
+.cinematic .hero-copy { grid-column: 1; grid-row: 1; min-width: 0; padding: 0; }
+.cinematic h1 { font-size: clamp(3rem, 5.2vw, 6rem); line-height: 0.98; }
+.cinematic .eyebrow { font-size: 0.7rem; line-height: 1.7; }
+.cinematic .actions { flex-wrap: wrap; gap: 20px; }
+.hero-art { grid-column: 2; grid-row: 1; margin: 0; min-width: 0; }
+.hero-art-frame { position: relative; isolation: isolate; overflow: hidden; }
+.hero-art-frame .hero-ocean { position: relative; inset: auto; display: block; width: 100%; height: auto; object-fit: contain; z-index: 0; }
+.hero-art-frame .ocean-motion { position: absolute; inset: 0; z-index: 1; }
+.hero-art-frame .ocean-ripple-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; }
+.hero-art .ocean-motion-toggle { position: static; width: fit-content; margin: 14px 0 0 auto; }
+.cinematic .hero-bottom { grid-column: 1 / -1; grid-row: 2; position: static; margin-top: 12px; }
+@media (max-width: 900px) {
+  .hero.cinematic { grid-template-columns: minmax(0, 1fr); padding: 38px 5% 0; gap: 30px; }
+  .cinematic .hero-copy { grid-column: 1; grid-row: 1; }
+  .cinematic h1 { font-size: clamp(3rem, 11vw, 5rem); }
+  .hero-art { grid-column: 1; grid-row: 2; width: 100%; }
+  .cinematic .hero-bottom { grid-row: 3; }
+}
