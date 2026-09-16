@@ -98,10 +98,10 @@ export default function Home() {
         </section>
         <div className="values-bar">
           <span>
-            <ShieldCheck /> Maritime safety
+            <ShieldCheck /> Youth empowerment
           </span>
           <span>
-            <Waves /> Marine conservation
+            <Waves /> Community development
           </span>
           <span>
             <HeartHandshake /> Charitable service
@@ -129,39 +129,59 @@ export default function Home() {
           </div>
           <div>
             <p className="lead">
-              The strongest current
-              <br />
-              is the one that brings us together.
+              Brotherhood. Humanitarian service. Community development.
             </p>
             <p className="muted">
-              Sea Eagle Marine Patrol USA is a charity organization built around
-              a shared commitment to people, our coastal waters, and the
-              communities we call home.
+              Sea Eagle Marine Patrol USA Inc. (SEMP USA Inc.) is a registered
+              501(c)(3) charitable organization committed to fostering brotherhood,
+              humanitarian service, and community development.
+            </p>
+            <p className="muted">
+              Our mission is to uplift underserved communities through education,
+              empowerment, charitable outreach, and promotion of cultural values
+              that encourage discipline, unity, and responsible citizenship.
             </p>
             <div className="mission-points">
               <article>
-                <ShieldCheck />
-                <h3>Stand for safety.</h3>
+                <HeartHandshake />
+                <h3>Charitable &amp; Humanitarian Services</h3>
                 <p>
-                  Promoting awareness, preparedness, and responsible activity on
-                  the water.
+                  To provide support to the less privileged through food drives,
+                  welfare assistance, health awareness, and disaster relief efforts.
+                </p>
+              </article>
+              <article>
+                <ShieldCheck />
+                <h3>Education &amp; Youth Empowerment</h3>
+                <p>
+                  To promote education, mentorship, and leadership development
+                  among youths and encourage positive community engagement.
                 </p>
               </article>
               <article>
                 <Waves />
-                <h3>Care for our waters.</h3>
+                <h3>Community Development</h3>
                 <p>
-                  Supporting conservation and the marine environments we share.
+                  To collaborate with other charitable bodies to promote peace,
+                  community service, environmental awareness, and social well-being.
                 </p>
               </article>
               <article>
-                <HeartHandshake />
-                <h3>Show up for people.</h3>
+                <Compass />
+                <h3>Cultural Unity &amp; Brotherhood</h3>
                 <p>
-                  Connecting our flotillas through charitable outreach and
-                  service.
+                  To promote unity, integrity, and respect for humanity while
+                  upholding the principles of brotherhood and service to humanity.
                 </p>
               </article>
+            </div>
+            <div className="mission-vision">
+              <h3>Our vision</h3>
+              <p>To be a leading Patrol recognized for excellence in humanitarian
+                service, community impact, and upholding the noble ideals of
+                service to humanity.</p>
+              <h3>Our motto</h3>
+              <p>Service to Humanity.</p>
             </div>
           </div>
         </section>
@@ -298,8 +318,14 @@ export default function Home() {
               For flotilla information, charitable partnerships, or ways to
               support our mission, we’d love to hear from you.
             </p>
-            <a className="contact-email" href="mailto:info@sempusa.org">
-              info@sempusa.org <ArrowUpRight />
+            <a className="contact-email" href="tel:+18882228000">
+              1-888-222-8000 <ArrowUpRight />
+            </a>
+            <a className="contact-email" href="mailto:sempusa22@yahoo.com">
+              sempusa22@yahoo.com <ArrowUpRight />
+            </a>
+            <a className="contact-email" href="mailto:sempusa@gmail.com">
+              sempusa@gmail.com <ArrowUpRight />
             </a>
           </div>
         </section>

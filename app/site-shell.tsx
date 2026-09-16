@@ -87,7 +87,9 @@ export function Footer() {
         <span>
           © {new Date().getFullYear()} Sea Eagle Marine Patrol USA Inc.
         </span>
-        <a href="mailto:info@sempusa.org">info@sempusa.org</a>
+        <a href="tel:+18882228000">1-888-222-8000</a>
+        <a href="mailto:sempusa22@yahoo.com">sempusa22@yahoo.com</a>
+        <a href="mailto:sempusa@gmail.com">sempusa@gmail.com</a>
       </div>
     </footer>
   );

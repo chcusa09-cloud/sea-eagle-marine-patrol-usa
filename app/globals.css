@@ -2053,3 +2053,9 @@ h2 em {
 @media (prefers-reduced-motion: reduce) {
   .ship-scene { animation: none; transform: none; }
 }
+
+.mission-vision { margin-top: 36px; padding-top: 26px; border-top: 1px solid #cbd0d5; }
+.mission-vision h3 { font-size: 1.6rem; margin-bottom: 10px; }
+.mission-vision p { margin-bottom: 22px; line-height: 1.75; }
+.contact-email { display: flex; width: fit-content; margin-top: 14px; overflow-wrap: anywhere; }
+.footer-bottom { flex-wrap: wrap; gap: 12px 24px; }

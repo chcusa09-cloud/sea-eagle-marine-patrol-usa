@@ -55,7 +55,7 @@ for (let i = 0; i < routes.length; i++) {
   const title = route ? `${({events:'Upcoming events',outreach:'Charitable outreach',tv:'SEMP TV',branding:'Branding center'})[route]} | SEMP USA` : 'SEMP USA | One Ship, One Course, One Marine';
   const directory = `pages-dist/${route}`;
   await mkdir(directory, { recursive: true });
-  await writeFile(`${directory}/index.html`, `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><meta name="description" content="Sea Eagle Marine Patrol USA. United in maritime safety, marine conservation, and service to humanity."><link rel="canonical" href="${origin}${base}/${route ? route+'/' : ''}"><link rel="icon" href="${base}/sea-eagle-logo.jpeg"><link rel="stylesheet" href="${base}/${stylesheet}"></head><body>${body}</body></html>`);
+  await writeFile(`${directory}/index.html`, `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><meta name="description" content="Sea Eagle Marine Patrol USA. United in brotherhood, humanitarian service, and community development."><link rel="canonical" href="${origin}${base}/${route ? route+'/' : ''}"><link rel="icon" href="${base}/sea-eagle-logo.jpeg"><link rel="stylesheet" href="${base}/${stylesheet}"></head><body>${body}</body></html>`);
 }
 await writeFile('pages-dist/.nojekyll', '');
 console.log(`Built ${routes.length} public pages. Events: ${data.events.length}; outreach: ${data.outreach.length}.`);

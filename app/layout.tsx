@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     template: "%s | SEMP USA",
   },
   description:
-    "Sea Eagle Marine Patrol USA. United in maritime safety, marine conservation, and service to humanity.",
+    "Sea Eagle Marine Patrol USA. United in brotherhood, humanitarian service, and community development.",
   icons: { icon: "/sea-eagle-logo.jpeg" },
 };
 export default function RootLayout({

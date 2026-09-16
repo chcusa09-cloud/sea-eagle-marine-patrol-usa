@@ -23,7 +23,7 @@ export default function Page() {
               initiative, contact our team.
             </p>
             <a
-              href="mailto:info@sempusa.org?subject=SEMP%20USA%20charitable%20outreach"
+              href="mailto:sempusa22@yahoo.com?subject=SEMP%20USA%20charitable%20outreach"
               className="button red"
             >
               Contact SEMP USA

@@ -55,9 +55,9 @@ export function PublicContent({ type }: { type: "events" | "outreach" }) {
     ) : (
       <div className="empty-state">
         <CalendarDays size={34} />
-        <h3>Our next gathering is on the horizon.</h3>
+        <h3>More event details to come.</h3>
         <p>
-          Upcoming SEMP USA events will be listed here when dates are announced.
+          Confirmed dates, locations, and event updates will be posted here.
         </p>
       </div>
     );
