@@ -1,7 +1,7 @@
 import { ArrowUpRight, Anchor } from "lucide-react";
 // Add only verified organization profile URLs; never guess account handles.
 const socialProfiles = [
-  { name: "Facebook", icon: "facebook", url: "" },
+  { name: "Facebook", icon: "facebook", url: "https://www.facebook.com/share/1Bh5jhd5Q4/?mibextid=wwXIfr" },
   { name: "TikTok", icon: "tiktok", url: "" },
   { name: "Instagram", icon: "instagram", url: "https://www.instagram.com/sempusainc/" },
 ];
