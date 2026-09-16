@@ -26,8 +26,8 @@ export default function Home() {
         <section className="hero cinematic">
           <img
             className="hero-ocean"
-            src="/maritime-hero.webp"
-            alt="Cinematic illustration of a civilian patrol boat crossing open water at sunset"
+            src="/viking-hero.webp"
+            alt="Water-level view of a dark wooden Viking ship sailing toward the sunset, with the SEMP emblem on its sail and carved into its hull"
             fetchPriority="high"
           />
           <div className="hero-shade" />
@@ -52,17 +52,6 @@ export default function Home() {
               <a className="text-link light" href="#mission">
                 Explore our mission <ArrowDown size={18} />
               </a>
-            </div>
-          </div>
-          <div className="hero-signature">
-            <img
-              src="/sea-eagle-logo.jpeg"
-              alt="Sea Eagle Marine Patrol USA emblem"
-            />
-            <div>
-              <span>SEA EAGLE MARINE PATROL</span>
-              <strong>SERVICE TO HUMANITY</strong>
-              <small>USA INC.</small>
             </div>
           </div>
           <div className="hero-bottom">
