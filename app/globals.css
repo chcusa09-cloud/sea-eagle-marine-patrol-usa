@@ -2000,12 +2000,12 @@ h2 em {
 .hero-art .ocean-motion-toggle { bottom: 18px; right: 4%; margin: 0; font-size: 0.75rem; }
 .cinematic .hero-bottom { position: relative; inset: auto; margin: 0 4%; padding: 20px 0; }
 @media (max-width: 900px) {
-  .cinematic .hero-copy { top: 6vw; }
+  .cinematic .hero-copy { top: 3vw; width: 38%; }
   .cinematic .eyebrow { display: none; }
-  .cinematic h1 { font-size: 5.3vw; margin-bottom: 12px; }
-  .cinematic .hero-description { font-size: clamp(0.75rem, 2vw, 1.1rem); line-height: 1.5; }
+  .cinematic h1 { font-size: 4.8vw; margin-bottom: 8px; }
+  .cinematic .hero-description { font-size: clamp(0.75rem, 2vw, 1.1rem); line-height: 1.35; }
   .hero-art { padding-bottom: 136px; }
-  .cinematic .actions { position: absolute; top: 51vw; left: 0; width: 92vw; margin: 0; gap: 12px 20px; align-items: center; }
+  .cinematic .actions { position: absolute; top: 54vw; left: 0; width: 92vw; margin: 0; gap: 12px 20px; align-items: center; }
   .cinematic .actions .text-link { font-size: 0.875rem; }
   .hero-art .ocean-motion-toggle { bottom: 8px; right: 4%; padding: 6px 10px; }
 }

@@ -63,9 +63,9 @@ export default function Home() {
               ONE MARINE.
             </h1>
             <p className="hero-description">
-              Our waters connect us.
-              <br />
-              Our humanity moves us.
+              Welcome to Sea Eagle Marine Patrol USA. Together, we turn
+              compassion into service—bringing hope, uplifting communities,
+              and being a blessing to every life we reach.
             </p>
             <div className="actions">
               <a className="button red" href="/outreach">
