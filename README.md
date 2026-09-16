@@ -2,6 +2,10 @@
 
 Public charity website and private member management application. Red, black, white, and gold theme based on the supplied SEMP emblem.
 
+Public website: https://chcusa09-cloud.github.io/sea-eagle-marine-patrol-usa/
+
+GitHub Pages publishes the five public pages using the existing React components and theme. Member and administrator links open the secure Sites backend. The `Publish Sea Eagle website` workflow reads only `/api/public` and refreshes events and outreach on each push, manual run, and hourly schedule (GitHub may delay scheduled runs). A failed content fetch leaves the previous published site intact. Run `node scripts/build-pages.mjs` to reproduce the public build. GitHub repository Settings → Pages must use GitHub Actions as the source. No member data, login credentials, or private API responses are included in the static output.
+
 ## Public pages
 
 - Home, mission, and flotillas
