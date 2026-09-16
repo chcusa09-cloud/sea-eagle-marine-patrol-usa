@@ -39,7 +39,7 @@ for (const route of routes) {
 }
 const css = await postcss([tailwind()]).process(await readFile('app/globals.css', 'utf8'), { from: resolve('app/globals.css'), to: resolve('pages-dist/style.css') });
 await writeFile('pages-dist/style.css', css.css.replace(/url\((["']?)\/(maritime-hero\.webp|sea-eagle-logo\.jpeg)\1\)/g, (_, quote, asset) => `url("${base}/${asset}")`));
-for (const name of ['sea-eagle-logo.jpeg', 'maritime-hero.webp']) await copyFile(`public/${name}`, `pages-dist/${name}`);
+for (const name of ['sea-eagle-logo.jpeg', 'maritime-hero.webp', 'social-facebook.svg', 'social-tiktok.svg', 'social-instagram.svg']) await copyFile(`public/${name}`, `pages-dist/${name}`);
 function url(path) {
   if (/^\/(portal|admin|setup)(\/|$|[?#])/.test(path)) return backend + path;
   const [pathname, hash] = path.split('#');

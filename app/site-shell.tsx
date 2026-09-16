@@ -1,4 +1,10 @@
 import { ArrowUpRight, Anchor } from "lucide-react";
+// Add only verified organization profile URLs; never guess account handles.
+const socialProfiles = [
+  { name: "Facebook", icon: "facebook", url: "" },
+  { name: "TikTok", icon: "tiktok", url: "" },
+  { name: "Instagram", icon: "instagram", url: "" },
+];
 export function Header() {
   return (
     <>
@@ -63,6 +69,20 @@ export function Footer() {
           <a href="/admin">Administration</a>
         </div>
       </div>
+      <section className="footer-social" aria-labelledby="social-heading">
+        <div>
+          <p className="eyebrow">STAY CONNECTED</p>
+          <h2 id="social-heading">Reach us on social media.</h2>
+        </div>
+        <ul className="social-platforms" aria-label="Social media platforms">
+          {socialProfiles.map(({ name, icon, url }) => {
+            const content = <><img src={`/social-${icon}.svg`} width="23" height="23" alt="" /><span>{name}</span></>;
+            return <li key={icon}>{url ? (
+              <a href={url} target="_blank" rel="noopener noreferrer" aria-label={`SEMP USA on ${name} (opens in a new tab)`}>{content}</a>
+            ) : <span className="social-profile-pending">{content}</span>}</li>;
+          })}
+        </ul>
+      </section>
       <div className="footer-bottom">
         <span>
           © {new Date().getFullYear()} Sea Eagle Marine Patrol USA Inc.
