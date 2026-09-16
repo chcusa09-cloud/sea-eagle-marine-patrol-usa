@@ -12,11 +12,11 @@ import {
 import { Header, Footer } from "./site-shell";
 const flotillas = [
   ["Gulf", "Houston, Texas"],
-  ["NLF", "SEMP USA"],
-  ["Kattegat", "Dallas, Texas"],
-  ["Debullz", "Florida"],
-  ["Atlantic", "SEMP USA"],
-  ["Pacific", "SEMP USA"],
+  ["NLF", "Northlake, Dallas, TX"],
+  ["Kattegat", "Maryland"],
+  ["Debullz", "Chicago, IL"],
+  ["South Atlantic", "Atlanta, GA"],
+  ["Hollywood", "Los Angeles, CA"],
 ];
 export default function Home() {
   return (
