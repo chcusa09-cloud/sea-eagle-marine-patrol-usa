@@ -38,7 +38,7 @@ for (const route of routes) {
   pages.push(renderToStaticMarkup(React.createElement(Page)));
 }
 const css = await postcss([tailwind()]).process(await readFile('app/globals.css', 'utf8'), { from: resolve('app/globals.css'), to: resolve('pages-dist/style.css') });
-await writeFile('pages-dist/style.css', css.css.replaceAll('url("/maritime-hero.webp")', `url("${base}/maritime-hero.webp")`));
+await writeFile('pages-dist/style.css', css.css.replace(/url\((["']?)\/(maritime-hero\.webp|sea-eagle-logo\.jpeg)\1\)/g, (_, quote, asset) => `url("${base}/${asset}")`));
 for (const name of ['sea-eagle-logo.jpeg', 'maritime-hero.webp']) await copyFile(`public/${name}`, `pages-dist/${name}`);
 function url(path) {
   if (/^\/(portal|admin|setup)(\/|$|[?#])/.test(path)) return backend + path;

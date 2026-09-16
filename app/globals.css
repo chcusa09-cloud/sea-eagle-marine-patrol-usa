@@ -1159,6 +1159,33 @@ td {
     display: block;
   }
 }
+/* Oversized emblem watermark on light public surfaces. */
+:is(.mission, .flotillas, .media, .contact, main > .content-wrap) {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+:is(.mission, .flotillas, .media, .contact, main > .content-wrap)::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  width: clamp(340px, 48vw, 650px);
+  aspect-ratio: 1;
+  right: -3%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("/sea-eagle-logo.jpeg") center / contain no-repeat;
+  mix-blend-mode: multiply;
+  opacity: 0.065;
+}
+@media (max-width: 760px) {
+  :is(.mission, .flotillas, .media, .contact, main > .content-wrap)::after {
+    width: 90vw;
+    right: -18%;
+    opacity: 0.05;
+  }
+}
 /* Sea Eagle editorial maritime identity */
 body {
   font-family: "Manrope", Arial, sans-serif;
