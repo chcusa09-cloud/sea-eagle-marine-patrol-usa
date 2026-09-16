@@ -79,10 +79,9 @@ export function PublicContent({ type }: { type: "events" | "outreach" }) {
   ) : (
     <div className="empty-state">
       <HeartHandshake size={34} />
-      <h3>Service, shared with our community.</h3>
+      <h3>Our service continues.</h3>
       <p>
-        Charitable initiatives, donations, and outreach stories will be
-        published here.
+        More charitable initiatives, donations, and outreach stories will be shared here.
       </p>
     </div>
   );

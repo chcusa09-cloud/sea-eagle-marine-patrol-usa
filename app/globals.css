@@ -2059,3 +2059,11 @@ h2 em {
 .mission-vision p { margin-bottom: 22px; line-height: 1.75; }
 .contact-email { display: flex; width: fit-content; margin-top: 14px; overflow-wrap: anywhere; }
 .footer-bottom { flex-wrap: wrap; gap: 12px 24px; }
+
+.outreach-story { margin-bottom: 42px; border-bottom: 1px solid #dce0e4; padding-bottom: 32px; }
+.outreach-story figure { margin: 0; }
+.outreach-story img { display: block; width: 100%; height: auto; border-radius: 4px; }
+.outreach-story figcaption { color: #60666d; font-size: 0.875rem; padding: 12px 0; }
+.outreach-story-copy { padding-top: 22px; max-width: 850px; }
+.outreach-story h2 { font-size: clamp(2.2rem, 4vw, 3.6rem); margin-bottom: 20px; }
+.outreach-story-copy > p:last-child { font-size: 1rem; line-height: 1.8; }

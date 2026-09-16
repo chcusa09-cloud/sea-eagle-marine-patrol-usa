@@ -15,6 +15,24 @@ export default function Page() {
           </p>
         </div>
         <div className="content-wrap">
+          <article className="outreach-story">
+            <figure>
+              <img
+                src="/gulf-houston-food-bank.webp"
+                width="1600"
+                height="1200"
+                alt="Gulf Flotilla members in red SEMP shirts gathered at Houston Food Bank with a charity outreach banner"
+              />
+              <figcaption>Gulf Flotilla at Houston Food Bank, Houston, Texas.</figcaption>
+            </figure>
+            <div className="outreach-story-copy">
+              <p className="eyebrow red-text">GULF FLOTILLA / HOUSTON, TEXAS</p>
+              <h2>Charity outreach at Houston Food Bank</h2>
+              <p>Members of the Gulf Flotilla came together for charitable outreach
+                at Houston Food Bank, putting our commitment to service to humanity
+                into action in the Houston community.</p>
+            </div>
+          </article>
           <PublicContent type="outreach" />
           <div className="panel" style={{ marginTop: 35 }}>
             <h2>Support the mission</h2>
