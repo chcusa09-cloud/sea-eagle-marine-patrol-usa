@@ -33,6 +33,25 @@ export default function Page() {
                 into action in the Houston community.</p>
             </div>
           </article>
+          <article className="outreach-story">
+            <figure>
+              <img
+                src="/atlanta-charity-outreach.webp"
+                width="1600"
+                height="1200"
+                alt="Sea Eagle Marine Patrol USA Inc. members gathered with a cart of supplies during charity outreach in Atlanta"
+                loading="lazy"
+              />
+              <figcaption>Sea Eagle Marine Patrol USA Inc. charity outreach in Atlanta, Georgia.</figcaption>
+            </figure>
+            <div className="outreach-story-copy">
+              <p className="eyebrow red-text">ATLANTA, GEORGIA / SERVICE TO HUMANITY</p>
+              <h2>Charity outreach in Atlanta</h2>
+              <p>Sea Eagle Marine Patrol USA Inc. members came together for
+                charitable outreach in Atlanta, sharing supplies and putting
+                compassion into action through service to the community.</p>
+            </div>
+          </article>
           <PublicContent type="outreach" />
           <div className="panel" style={{ marginTop: 35 }}>
             <h2>Support the mission</h2>
