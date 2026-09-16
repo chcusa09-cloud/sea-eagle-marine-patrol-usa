@@ -2036,3 +2036,20 @@ h2 em {
 @media (prefers-reduced-motion: reduce) {
   .hero-art-frame .sail-motion { display: none; }
 }
+
+/* A slow buoyant roll keeps the artwork and its water/sail effects aligned. */
+.ship-scene {
+  position: relative;
+  transform-origin: 70% 85%;
+  animation: ship-rock 9s ease-in-out infinite;
+}
+@keyframes ship-rock {
+  0%, 100% { transform: scale(1.012) rotate(-0.35deg) translateY(0); }
+  50% { transform: scale(1.012) rotate(0.35deg) translateY(-2px); }
+}
+.cinematic:has(.ocean-motion-toggle input:checked) .ship-scene {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ship-scene { animation: none; transform: none; }
+}

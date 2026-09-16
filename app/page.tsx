@@ -26,6 +26,7 @@ export default function Home() {
         <section className="hero cinematic">
           <figure className="hero-art">
           <div className="hero-art-frame">
+          <div className="ship-scene">
           <img
             className="hero-ocean"
             src="/viking-hero.webp"
@@ -55,6 +56,7 @@ export default function Home() {
           </div>
           <div className="sail-motion" aria-hidden="true">
             <img src="/viking-hero.webp" alt="" />
+          </div>
           </div>
           </div>
           <label className="ocean-motion-toggle">
