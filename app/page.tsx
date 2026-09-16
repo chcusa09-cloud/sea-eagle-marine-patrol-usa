@@ -34,6 +34,14 @@ export default function Home() {
           />
           <svg className="ocean-filter-defs" aria-hidden="true" width="0" height="0">
             <defs>
+              <filter id="sail-breeze" x="-2%" y="-2%" width="104%" height="104%" colorInterpolationFilters="sRGB">
+                <feTurbulence type="fractalNoise" baseFrequency="0.008 0.024" numOctaves="1" seed="12" result="breeze">
+                  <animate attributeName="baseFrequency" values="0.008 0.024;0.011 0.032;0.008 0.024" dur="7s" repeatCount="indefinite" />
+                </feTurbulence>
+                <feDisplacementMap in="SourceGraphic" in2="breeze" scale="7" xChannelSelector="R" yChannelSelector="G">
+                  <animate attributeName="scale" values="3;7;4;3" dur="9s" repeatCount="indefinite" />
+                </feDisplacementMap>
+              </filter>
               <filter id="ocean-ripple" x="-5%" y="-5%" width="110%" height="110%" colorInterpolationFilters="sRGB">
                 <feTurbulence type="fractalNoise" baseFrequency="0.012 0.065" numOctaves="1" seed="7" result="water-noise">
                   <animate attributeName="baseFrequency" values="0.012 0.065;0.016 0.085;0.012 0.065" dur="9s" repeatCount="indefinite" />
@@ -45,10 +53,13 @@ export default function Home() {
           <div className="ocean-motion" aria-hidden="true">
             <img src="/viking-hero.webp" alt="" className="ocean-ripple-image" />
           </div>
+          <div className="sail-motion" aria-hidden="true">
+            <img src="/viking-hero.webp" alt="" />
+          </div>
           </div>
           <label className="ocean-motion-toggle">
             <input type="checkbox" />
-            Pause water animation
+            Pause scene animation
           </label>
           </figure>
           <div className="hero-copy">
