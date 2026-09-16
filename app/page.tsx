@@ -64,7 +64,7 @@ export default function Home() {
             </h1>
             <p className="hero-description">
               Welcome to Sea Eagle Marine Patrol USA. Together, we turn
-              compassion into service—bringing hope, uplifting communities,
+              compassion into service by bringing hope, uplifting communities,
               and being a blessing to every life we reach.
             </p>
             <div className="actions">
