@@ -59,6 +59,8 @@ export default function Home() {
               ONE SHIP.
               <br />
               <em>ONE COURSE.</em>
+              <br />
+              ONE MARINE.
             </h1>
             <p className="hero-description">
               Our waters connect us.

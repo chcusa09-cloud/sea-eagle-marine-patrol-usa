@@ -6,7 +6,7 @@ export default function Page() {
       <Header />
       <main id="main">
         <div className="page-intro">
-          <p className="eyebrow red-text">ONE SHIP, ONE COURSE</p>
+          <p className="eyebrow red-text">ONE SHIP, ONE COURSE, ONE MARINE</p>
           <h1>Branding center</h1>
           <p className="muted">The SEMP USA emblem and organization colors.</p>
         </div>

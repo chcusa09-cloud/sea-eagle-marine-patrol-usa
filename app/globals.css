@@ -123,6 +123,8 @@ h3 {
 }
 .top-strip {
   display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
   justify-content: space-between;
   background: var(--ink);
   color: #d2c4aa;

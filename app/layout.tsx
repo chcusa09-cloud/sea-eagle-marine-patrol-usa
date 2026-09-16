@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 export const metadata: Metadata = {
   title: {
-    default: "SEMP USA | One Ship, One Course",
+    default: "SEMP USA | One Ship, One Course, One Marine",
     template: "%s | SEMP USA",
   },
   description:

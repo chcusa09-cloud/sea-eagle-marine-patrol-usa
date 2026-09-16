@@ -13,7 +13,7 @@ export function Header() {
       </a>
       <div className="top-strip">
         <span>SERVICE TO HUMANITY</span>
-        <span>ONE SHIP, ONE COURSE</span>
+        <span>ONE SHIP, ONE COURSE, ONE MARINE</span>
       </div>
       <header className="site-header">
         <a href="/" className="brand" aria-label="SEMP USA home">
@@ -53,7 +53,7 @@ export function Footer() {
             </span>
           </a>
           <p>
-            One Ship, One Course.
+            One Ship, One Course, One Marine.
             <br />
             Service to Humanity.
           </p>

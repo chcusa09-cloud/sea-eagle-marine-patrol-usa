@@ -52,7 +52,7 @@ function url(path) {
 for (let i = 0; i < routes.length; i++) {
   const route = routes[i];
   const body = pages[i].replace(/(href|src)="(\/(?!\/)[^"]*)"/g, (_, attr, path) => `${attr}="${url(path)}"`);
-  const title = route ? `${({events:'Upcoming events',outreach:'Charitable outreach',tv:'SEMP TV',branding:'Branding center'})[route]} | SEMP USA` : 'SEMP USA | One Ship, One Course';
+  const title = route ? `${({events:'Upcoming events',outreach:'Charitable outreach',tv:'SEMP TV',branding:'Branding center'})[route]} | SEMP USA` : 'SEMP USA | One Ship, One Course, One Marine';
   const directory = `pages-dist/${route}`;
   await mkdir(directory, { recursive: true });
   await writeFile(`${directory}/index.html`, `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><meta name="description" content="Sea Eagle Marine Patrol USA. United in maritime safety, marine conservation, and service to humanity."><link rel="canonical" href="${origin}${base}/${route ? route+'/' : ''}"><link rel="icon" href="${base}/sea-eagle-logo.jpeg"><link rel="stylesheet" href="${base}/${stylesheet}"></head><body>${body}</body></html>`);
