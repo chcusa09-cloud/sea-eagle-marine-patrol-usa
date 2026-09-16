@@ -1982,31 +1982,31 @@ h2 em {
 }
 
 
-/* Keep the complete ship artwork separate from the headline at every size. */
-.hero.cinematic {
-  display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.6fr);
-  align-items: center;
-  gap: 32px;
-  padding: 60px 4% 0;
-  min-height: 0;
-  overflow: hidden;
-}
-.cinematic .hero-copy { grid-column: 1; grid-row: 1; min-width: 0; padding: 0; }
-.cinematic h1 { font-size: clamp(3rem, 5.2vw, 6rem); line-height: 0.98; }
-.cinematic .eyebrow { font-size: 0.7rem; line-height: 1.7; }
-.cinematic .actions { flex-wrap: wrap; gap: 20px; }
-.hero-art { grid-column: 2; grid-row: 1; margin: 0; min-width: 0; }
+/* One uncropped scene, with copy confined to the dark clouds on the left. */
+.hero.cinematic { display: block; padding: 0; min-height: 0; overflow: hidden; }
+.hero-art { position: relative; margin: 0; width: 100%; }
 .hero-art-frame { position: relative; isolation: isolate; overflow: hidden; }
 .hero-art-frame .hero-ocean { position: relative; inset: auto; display: block; width: 100%; height: auto; object-fit: contain; z-index: 0; }
 .hero-art-frame .ocean-motion { position: absolute; inset: 0; z-index: 1; }
 .hero-art-frame .ocean-ripple-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; }
-.hero-art .ocean-motion-toggle { position: static; width: fit-content; margin: 14px 0 0 auto; }
-.cinematic .hero-bottom { grid-column: 1 / -1; grid-row: 2; position: static; margin-top: 12px; }
+.cinematic .hero-copy { position: absolute; top: 12%; left: 4%; width: 37%; max-width: none; padding: 0; z-index: 2; }
+.cinematic h1 { font-size: clamp(2rem, 5.3vw, 6rem); line-height: 0.98; margin-bottom: 22px; }
+.cinematic .eyebrow { font-size: clamp(0.65rem, 0.8vw, 0.85rem); line-height: 1.6; letter-spacing: 0.1em; margin-bottom: 20px; }
+.cinematic .hero-description { font-size: clamp(0.9rem, 1.6vw, 1.5rem); }
+.cinematic .actions { flex-wrap: wrap; gap: 16px; margin-top: 24px; }
+.cinematic .button { font-size: 0.875rem; padding: 12px 16px; }
+.hero-art .ocean-motion-toggle { bottom: 18px; right: 4%; margin: 0; font-size: 0.75rem; }
+.cinematic .hero-bottom { position: relative; inset: auto; margin: 0 4%; padding: 20px 0; }
 @media (max-width: 900px) {
-  .hero.cinematic { grid-template-columns: minmax(0, 1fr); padding: 38px 5% 0; gap: 30px; }
-  .cinematic .hero-copy { grid-column: 1; grid-row: 1; }
-  .cinematic h1 { font-size: clamp(3rem, 11vw, 5rem); }
-  .hero-art { grid-column: 1; grid-row: 2; width: 100%; }
-  .cinematic .hero-bottom { grid-row: 3; }
+  .cinematic .hero-copy { top: 6vw; }
+  .cinematic .eyebrow { display: none; }
+  .cinematic h1 { font-size: 5.3vw; margin-bottom: 12px; }
+  .cinematic .hero-description { font-size: clamp(0.75rem, 2vw, 1.1rem); line-height: 1.5; }
+  .hero-art { padding-bottom: 136px; }
+  .cinematic .actions { position: absolute; top: 51vw; left: 0; width: 92vw; margin: 0; gap: 12px 20px; align-items: center; }
+  .cinematic .actions .text-link { font-size: 0.875rem; }
+  .hero-art .ocean-motion-toggle { bottom: 8px; right: 4%; padding: 6px 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-art .ocean-motion-toggle, .hero-art .ocean-motion { display: none; }
 }
