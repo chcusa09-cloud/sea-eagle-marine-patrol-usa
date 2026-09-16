@@ -2041,11 +2041,11 @@ h2 em {
 .ship-scene {
   position: relative;
   transform-origin: 70% 85%;
-  animation: ship-rock 9s ease-in-out infinite;
+  animation: ship-rock 12s ease-in-out infinite;
 }
 @keyframes ship-rock {
-  0%, 100% { transform: scale(1.012) rotate(-0.35deg) translateY(0); }
-  50% { transform: scale(1.012) rotate(0.35deg) translateY(-2px); }
+  0%, 100% { transform: scale(1.012) rotate(-0.1deg) translateY(0); }
+  50% { transform: scale(1.012) rotate(0.1deg) translateY(-0.5px); }
 }
 .cinematic:has(.ocean-motion-toggle input:checked) .ship-scene {
   animation-play-state: paused;
