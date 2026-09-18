@@ -52,6 +52,25 @@ export default function Page() {
                 compassion into action through service to the community.</p>
             </div>
           </article>
+          <article className="outreach-story">
+            <figure style={{ maxWidth: 720, margin: "0 auto" }}>
+              <img
+                src="/foundation-donation.webp"
+                width="647"
+                height="662"
+                alt="Sea Eagle Marine Patrol USA Inc. members presenting a large donation check to a foundation"
+                loading="lazy"
+              />
+              <figcaption>SEMP USA Inc. presenting a donation check to a foundation.</figcaption>
+            </figure>
+            <div className="outreach-story-copy">
+              <p className="eyebrow red-text">CHARITABLE GIVING / SERVICE TO HUMANITY</p>
+              <h2>Donation check presentation to a foundation</h2>
+              <p>Sea Eagle Marine Patrol USA Inc. presented a donation check to
+                a foundation, continuing our commitment to charitable giving
+                and service to humanity.</p>
+            </div>
+          </article>
           <PublicContent type="outreach" />
           <div className="panel" style={{ marginTop: 35 }}>
             <h2>Support the mission</h2>
