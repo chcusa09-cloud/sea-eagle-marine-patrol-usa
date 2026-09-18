@@ -2062,6 +2062,7 @@ h2 em {
 
 .outreach-story { margin-bottom: 42px; border-bottom: 1px solid #dce0e4; padding-bottom: 32px; }
 .outreach-story figure { margin: 0; }
+.outreach-photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 24px; margin-top: 24px; align-items: start; }
 .outreach-story img { display: block; width: 100%; height: auto; border-radius: 4px; }
 .outreach-story figcaption { color: #60666d; font-size: 0.875rem; padding: 12px 0; }
 .outreach-story-copy { padding-top: 22px; max-width: 850px; }

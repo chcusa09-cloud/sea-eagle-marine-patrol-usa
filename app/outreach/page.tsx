@@ -71,6 +71,37 @@ export default function Page() {
                 and service to humanity.</p>
             </div>
           </article>
+          <article className="outreach-story" id="new-york-outreach">
+            <figure>
+              <img src="/new-york-outreach-1.webp" width="1280" height="960"
+                alt="SEMP USA members gathered outdoors with boxed fans during charitable outreach"
+                loading="lazy" />
+              <figcaption>SEMP USA Inc. coming together for charitable service.</figcaption>
+            </figure>
+            <div className="outreach-photo-grid">
+              <figure>
+                <img src="/new-york-outreach-2.webp" width="720" height="1280"
+                  alt="Outreach volunteers meeting around a table and completing paperwork"
+                  loading="lazy" />
+                <figcaption>Working together in service to the community.</figcaption>
+              </figure>
+              <figure>
+                <img src="/new-york-outreach-3.webp" width="768" height="1024"
+                  alt="SEMP USA members and community members gathered outside with donated supplies"
+                  loading="lazy" />
+                <figcaption>SEMP USA Inc. charitable outreach in New York.</figcaption>
+              </figure>
+            </div>
+            <div className="outreach-story-copy">
+              <p className="eyebrow red-text">NEW YORK / SERVICE TO HUMANITY</p>
+              <h2>Supporting people experiencing homelessness in New York</h2>
+              <p>Sea Eagle Marine Patrol USA Inc. extended its charitable outreach
+                to people experiencing homelessness in New York, sharing support
+                and compassion with our neighbors. Through service, we affirm
+                the dignity of every person and our commitment to being a blessing
+                to the communities we reach.</p>
+            </div>
+          </article>
           <PublicContent type="outreach" />
           <div className="panel" style={{ marginTop: 35 }}>
             <h2>Support the mission</h2>
