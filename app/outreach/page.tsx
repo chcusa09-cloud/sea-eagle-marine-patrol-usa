@@ -112,6 +112,26 @@ export default function Page() {
                 to the communities we reach.</p>
             </div>
           </article>
+          <article className="outreach-story" id="kattegat-maryland">
+            <figure>
+              <img
+                src="/kattegat-maryland-shelter.webp"
+                width="1280"
+                height="960"
+                alt="Kattegat Flotilla members and shelter staff gathered with donated pillows, bottled water, and household supplies in Maryland"
+                loading="lazy"
+              />
+              <figcaption>Kattegat Flotilla donating essential supplies to a homeless shelter in Maryland.</figcaption>
+            </figure>
+            <div className="outreach-story-copy">
+              <p className="eyebrow red-text">KATTEGAT FLOTILLA / MARYLAND</p>
+              <h2>Supporting a homeless shelter in Maryland</h2>
+              <p>Members of the Kattegat Flotilla donated pillows, bottled water,
+                and essential household supplies to a homeless shelter in Maryland.
+                This outreach reflects our commitment to bringing comfort,
+                compassion, and practical support to people experiencing homelessness.</p>
+            </div>
+          </article>
           <PublicContent type="outreach" />
           <div className="panel" style={{ marginTop: 35 }}>
             <h2>Support the mission</h2>
