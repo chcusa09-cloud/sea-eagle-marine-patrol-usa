@@ -123,6 +123,16 @@ export default function Page() {
               />
               <figcaption>Kattegat Flotilla donating essential supplies to a homeless shelter in Maryland.</figcaption>
             </figure>
+            <figure style={{ marginTop: 24 }}>
+              <img
+                src="/kattegat-maryland-outreach.webp"
+                width="1280"
+                height="960"
+                alt="Kattegat Flotilla members with donated pillows, bottled water, and household supplies at a Maryland shelter"
+                loading="lazy"
+              />
+              <figcaption>Kattegat Flotilla supporting the Maryland community through charitable outreach.</figcaption>
+            </figure>
             <div className="outreach-story-copy">
               <p className="eyebrow red-text">KATTEGAT FLOTILLA / MARYLAND</p>
               <h2>Supporting a homeless shelter in Maryland</h2>
