@@ -15,7 +15,7 @@ export default function Page() {
           </p>
         </div>
         <div className="content-wrap">
-          <article className="outreach-story">
+          <article className="outreach-story" id="houston-food-bank">
             <figure>
               <img
                 src="/gulf-houston-food-bank.webp"
@@ -24,6 +24,16 @@ export default function Page() {
                 alt="Gulf Flotilla members in red SEMP shirts gathered at Houston Food Bank with a charity outreach banner"
               />
               <figcaption>Gulf Flotilla at Houston Food Bank, Houston, Texas.</figcaption>
+            </figure>
+            <figure style={{ maxWidth: 720, margin: "24px auto 0" }}>
+              <img
+                src="/gulf-houston-food-bank-volunteering.webp"
+                width="960"
+                height="1280"
+                alt="Gulf Flotilla volunteer in a red SEMP shirt packing fresh produce at Houston Food Bank"
+                loading="lazy"
+              />
+              <figcaption>Gulf Flotilla helping pack fresh produce at Houston Food Bank.</figcaption>
             </figure>
             <div className="outreach-story-copy">
               <p className="eyebrow red-text">GULF FLOTILLA / HOUSTON, TEXAS</p>
